@@ -21,4 +21,8 @@
       (str/join "\n" (map #(str/join " " %) partitions)))
 
 (defn run [n]
-  (println (format-fizzbuzz (partition-by-5s (replace-with-fizz-buzz (generate-numbers n))))))
+      (println (-> n
+                   generate-numbers
+                   replace-with-fizz-buzz
+                   partition-by-5s
+                   format-fizzbuzz)))
