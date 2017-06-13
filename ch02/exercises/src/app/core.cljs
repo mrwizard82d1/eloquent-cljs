@@ -7,7 +7,7 @@
 
 (defn main [& args]
   (println "Abracadabra!")
-  (triangle/run)
+  (triangle/run 7)
   (fizzbuzz/run 100))
 
 (set! *main-cli-fn* main)

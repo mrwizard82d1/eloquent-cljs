@@ -1,7 +1,7 @@
 (ns app.fizzbuzz)
 
 (defn generate-numbers [n]
-      (range 1 n))
+      (range 1 (inc n)))
 
 (defn calculate-fizz-buzz [n]
       (cond
